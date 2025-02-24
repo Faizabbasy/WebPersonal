@@ -136,23 +136,47 @@
   </section>
 
 
-  <section>
+  <section id="3.0" class="m-5 p-4">
     <div class="bg-white m-5 p-3 flex-fill">
-        <h2>Revolusi Industri 3.0</h2>
-        <p>Revolusi Industri 3.0, yang juga dikenal sebagai Revolusi Industri Digital atau Revolusi Industri Ketiga, adalah tahap perubahan besar dalam bidang industri yang terjadi sejak akhir abad ke-20. Berbeda dengan Revolusi Industri 1.0 (yang ditandai dengan penemuan mesin uap) dan Revolusi Industri 2.0 (yang dipicu oleh penemuan listrik dan produksi massal), Revolusi Industri 3.0 didorong oleh perkembangan teknologi digital.</p>
+      <div >
+        <h1>Revolusi Industri 3.0</h1>
+        <p>Revolusi Industri 3.0, yang dikenal juga sebagai Revolusi Industri Digital, terjadi pada akhir abad ke-20,
+          sekitar tahun 1970-an hingga 1990-an. Ini ditandai dengan kemajuan teknologi informasi, komputer, dan otomasi
+          yang mengubah cara produksi, distribusi, dan komunikasi.</p>
+    
 
-        <button id="toggleTextBtn" class="btn btn-primary">Klik</button>
+      <button id="changeTextBtn" class="btn btn-primary">Klik untuk lebih banyak</button>
 
-        <div id="moreText" style="display: none;">
-            <p>Automatisasi dan Robotik: Pengenalan komputer, perangkat lunak, dan sistem otomatis yang memungkinkan proses produksi lebih efisien. Mesin-mesin dan robot menggantikan pekerjaan manual dalam banyak sektor industri.</p>
-            <p>Teknologi Informasi: Penggunaan komputer, jaringan, dan internet yang mulai menghubungkan seluruh dunia. Sistem manajemen berbasis komputer mengubah cara perusahaan menjalankan operasi mereka.</p>
-            <p>Komunikasi dan Jaringan Global: Dengan munculnya internet, terjadi revolusi dalam komunikasi dan pertukaran informasi. Hal ini memungkinkan koneksi antarindividu dan perusahaan secara global, serta memfasilitasi perdagangan dan kolaborasi lintas negara.</p>
-            <p>Proses Produksi Berbasis Komputer: Penggunaan perangkat lunak untuk merancang produk dan mengatur proses produksi (seperti CAD/CAM dalam desain dan manufaktur) memberikan peningkatan dalam kecepatan dan akurasi produksi.</p>
-            <p>Big Data dan Analitik: Kemajuan dalam pengumpulan data dan analitik memungkinkan perusahaan untuk membuat keputusan berbasis data secara lebih cerdas, meningkatkan efisiensi dan prediksi permintaan pasar.</p>
-            <img src="Image/1.0.jpg" alt="">
-        </div>
-    </div>
-</section>
+      <div id="additionalText" style="display: none;">
+        <p><strong>Penggunaan Komputer dan Otomasi:</strong> Perusahaan mulai menggunakan komputer untuk meningkatkan
+          efisiensi operasional,
+          mengontrol proses produksi, dan meningkatkan kualitas produk. Sistem otomasi juga diperkenalkan untuk
+          menggantikan
+          pekerjaan manual, meningkatkan produktivitas.</p>
+
+        <p><strong>Teknologi Informasi dan Internet:</strong> Dengan perkembangan komputer dan internet, informasi dapat
+          diproses dan
+          dibagikan dengan lebih cepat. Ini mempengaruhi bisnis, memungkinkan perusahaan untuk bekerja lebih efisien dan
+          membuka peluang baru dalam komunikasi dan pemasaran.</p>
+
+        <p><strong>Robotika:</strong> Dalam banyak industri, robot digunakan untuk menggantikan tenaga manusia dalam
+          pekerjaan berulang dan
+          berisiko tinggi. Robot ini dapat bekerja dengan presisi tinggi dan kecepatan yang lebih cepat dibandingkan
+          manusia.</p>
+
+        <p><strong>Globalisasi:</strong> Perusahaan bisa memperluas pasar mereka secara global berkat teknologi
+          komunikasi
+          dan transportasi
+          yang lebih canggih.</p>
+
+        <p><strong>Perubahan dalam Sumber Daya Manusia:</strong> Tuntutan akan keterampilan teknis dan kemampuan untuk
+          mengoperasikan
+          teknologi baru semakin meningkat. Banyak pekerjaan yang dulu dilakukan secara manual mulai digantikan oleh
+          teknologi.</p>
+      </div>
+
+  </section>
+
 
   <section></section>
 
@@ -184,21 +208,31 @@
     });
 
     document.getElementById('toggleTextBtn').addEventListener('click', function () {
-        var moreText = document.getElementById('moreText');
-        if (moreText.style.display === "none") {
-            moreText.style.display = "block";
-            this.textContent = "Klik"; // Ubah teks tombol
-        } else {
-            moreText.style.display = "none";
-            this.textContent = "Klik untuk lebih banyak"; // Kembalikan teks tombol
-        }
+      var moreText = document.getElementById('moreText');
+      if (moreText.style.display === "none") {
+        moreText.style.display = "block";
+        this.textContent = "Klik"; // Ubah teks tombol
+      } else {
+        moreText.style.display = "none";
+        this.textContent = "Klik untuk lebih banyak"; // Kembalikan teks tombol
+      }
     });
+
+
+    document.getElementById('changeTextBtn').addEventListener('click', function () {
+      var additionalText = document.getElementById('additionalText');
+      // Toggle tampilan teks
+      if (additionalText.style.display === "none") {
+        additionalText.style.display = "block";
+        this.textContent = "Klik untuk lebih sedikit"; // Ubah teks tombol
+      } else {
+        additionalText.style.display = "none";
+        this.textContent = "Klik untuk lebih banyak"; // Kembalikan teks tombol
+      }
+    });
+
 
   </script>
 </body>
 
 </html>
-
-
-
-

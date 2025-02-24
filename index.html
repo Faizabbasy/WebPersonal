@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        .animate__animated.animate__fadeInLeft {
+            --animate-duration: 2s;
+        }
+
+        .animate__animated.animate__fadeInRight {
+            --animate-duration: 2s;
+        }
+
+        .animate__animated.animate__fadeInDown {
+            --animate-duration: 2s;
+        }
+
+        /* This changes all the animations globally */
+        :root {
+            --animate-duration: 800ms;
+            --animate-delay: 0.9s;
+        }
+
+        .typing-animation {
+            overflow: hidden;
+            border-right: .15em solid orange;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em;
+            animation: typing 5.5s steps(40, end) infinite, blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+
+        @keyframes blink-caret {
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: orange;
+            }
+        }
+
+        /* Sticky footer styles */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body style="background-color: #FFF2F2;">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <div class="d-flex gap-3">
+                <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                <a href="https://www.instagram.com/direct/inbox/"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                <a href="https://web.telegram.org/k/"><i class="fa-brands fa-telegram fa-2x"></i></a>
+                <a href=""><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="certifikat.html">Skill/Certifikat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Project</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Tugas
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="PIPAS.html">PIPAS</a></li>
+                                <li><a class="dropdown-item" href="sunda.html">Sunda</a></li>
+                                <li><a class="dropdown-item" href="sejarah.html">Sejarah</a></li>
+                                <li><a class="dropdown-item" href="kalkulator.html">Kalkulator PIPAS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div id="Home" class="container mt-5 pt-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center">
+                    <img class="img-fluid animate__animated animate__fadeInRight w-50" src="Image/Screenshot 2025-02-20 221817.png" alt=""
+                        style="border-radius: 0px 170px; box-shadow: 4px 8px 4px 3px;">
+                </div>
+                <div class="col-md-6" style="font-family: sans-serif;">
+                    <h1 class="animate__animated animate__fadeInLeft mt-5 pt-5 fs-1">Hi!, I'm Faiz Abbasy</h1>
+                    <h3 class="animate__animated animate__fadeInLeft fs-3 typing-animation">I'm <span style="color: red;">Frontend</span> Development</h3>
+                    <p class="animate__animated animate__fadeInLeft fs-5 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                        exercitationem mollitia quos fuga. <br>
+                        Reiciendis dignissimos repellendus ab deleniti quasi voluptates earum, assumenda itaque <br> quibusdam
+                        eligendi libero beatae excepturi praesentium corporis?</p>
+                    <br>
+                    <button type="button" class="btn btn-outline-success animate__animated animate__fadeInLeft" style="border-radius: 20px 20px;">Download CV <i class="fa-solid fa-download"></i></button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark p-1 ">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <p class="text-white ">2025 All Right Reserved by @Faiz Abbasy</p>
+                </div>  
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.documentElement.style.setProperty('--animate-duration', '2s');
+        // All animations will take half the time to accomplish
+        document.documentElement.style.setProperty('--animate-duration', '.4s');
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

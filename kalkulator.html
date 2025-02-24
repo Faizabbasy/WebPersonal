@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Jejak Karbon Barang Elektronik</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #0bb2cc, #d3dadb);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: linear-gradient(to right, #367f80, #d4c9c900);
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 5px;
+        }
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Jejak Karbon Barang Elektronik</h1>
+
+        <div class="form-group">
+            <label for="device">Pilih Jenis Alat Elektronik:</label>
+            <select id="device" required>
+                <option value="computer">Komputer</option>
+                <option value="tv">Televisi</option>
+                <option value="fridge">Kulkas</option>
+                <option value="air_conditioner">AC</option>
+                <option value="laptop">Laptop</option>
+                <option value="phone">HP</option>
+                <option value="microwave">Microwave</option>
+                <option value="other">Perangkat Lain</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="usageHours">Berapa jam per hari alat ini digunakan?</label>
+            <input type="number" id="usageHours" placeholder="Masukkan jam per hari" required>
+        </div>
+
+        <div class="form-group">
+            <label for="quantity">Jumlah alat elektronik yang dimiliki:</label>
+            <input type="number" id="quantity" placeholder="Masukkan jumlah alat" required>
+        </div>
+
+        <div class="form-group">
+            <button onclick="calculateCarbon()">Hitung Jejak Karbon</button>
+        </div>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function calculateCarbon() {
+           
+            let deviceType = document.getElementById('device').value;
+            let usageHours = document.getElementById('usageHours').value;
+            let quantity = document.getElementById('quantity').value;
+
+            let powerConsumption = 0;  
+            const co2PerKWh = 0.85;
+
+            
+            switch (deviceType) {
+                case 'computer':
+                    powerConsumption = 0.2; 
+                    break;
+                case 'tv':
+                    powerConsumption = 0.1; 
+                    break;
+                case 'fridge':
+                    powerConsumption = 0.4; 
+                    break;
+                case 'air_conditioner':
+                    powerConsumption = 1.5; 
+                    break;
+                case 'laptop':
+                    powerConsumption = 0.05; // Laptop (0.05 kWh per jam)
+                    break;
+                case 'phone':
+                    powerConsumption = 0.02; // HP (0.02 kWh per jam)
+                    break;
+                case 'microwave':
+                    powerConsumption = 1.0; 
+                    break;
+                case 'other':
+                    powerConsumption = 0.2; // Perangkat Lain (default)
+                    break;
+            }
+
+            // Hitung emisi CO2 per perangkat
+            let dailyConsumption = powerConsumption * usageHours; // konsumsi daya harian dalam kWh
+            let carbonPerDevice = dailyConsumption * co2PerKWh; // jejak karbon per perangkat per hari
+            let totalCarbon = carbonPerDevice * quantity; // Total jejak karbon berdasarkan jumlah alat
+
+            // Tampilkan hasil
+            document.getElementById('result').innerHTML = `Total Jejak Karbon Anda adalah: ${totalCarbon.toFixed(2)} kg CO2 per hari.`;
+        }
+    </script>
+</body>
+</html>

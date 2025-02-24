@@ -1,0 +1,23 @@
+body {
+    position: relative;
+    background-image: url('Image/revolusi.jpg'); /* Pastikan path gambar benar */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Set height sesuai dengan kebutuhan */
+  }
+  
+  body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('Image/revolusi.jpg'); /* Pastikan path gambar benar */
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); /* Sesuaikan nilai blur sesuai keinginan */
+    z-index: -1; /* Agar blur berada di belakang konten */
+  }
+  
+  

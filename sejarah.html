@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="sejarah.css">
 </head>
 
-<body class="w-100" style="height: 200vh;">
+<body class="w-100" style="height: 300vh;">
   <nav class="navbar navbar-expand-lg bg-gray">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">__</a>
@@ -27,8 +27,8 @@
         <div class="navbar-nav fs-3">
           <a class="nav-link active" aria-current="page" href="#Pengertian">1.0</a>
           <a class="nav-link" href="#2.0">2.0</a>
-          <a class="nav-link" href="#">3.0</a>
-          <a class="nav-link" href="#">4.0</a>
+          <a class="nav-link" href="#3.0">3.0</a>
+          <a class="nav-link" href="#4.0">4.0</a>
         </div>
         <i class="fa-solid fa-arrow-left"></i>
       </div>
@@ -36,8 +36,7 @@
     </div>
   </nav>
 
-
-
+  <h1 style="font-size: 100px;">Revolusi Industri</h1>
   <section id="Pengertian" class="d-flex m-5 p-3">
     <!-- Bagian teks -->
     <div class="bg-white m-5 p-3 flex-fill">
@@ -47,9 +46,7 @@
         revolusi industri yang mengubah cara manusia memproduksi barang, terutama di Inggris, sebelum akhirnya menyebar
         ke negara-negara lain di Eropa dan Amerika Utara.</p>
 
-      <p><button id="changeTextBtn" class="btn btn-primary">Klik untuk lebih banyak</button></p>
-
-      <div id="additionalText" style="display: none;">
+      <div>
         <p><strong>Ciri-ciri utama Revolusi Industri 1.0:</strong></p>
         <ul>
           <li><strong>Pengenalan Mesin Uap:</strong> Salah satu penemuan paling penting pada Revolusi Industri 1.0
@@ -80,12 +77,14 @@
             mesin uap dan industri lainnya.</li>
           <li>Penciptaan Pasar Global: Teknologi baru membuka pasar internasional untuk produk dalam jumlah besar.</li>
         </ul>
-        <img src="Image/1.0.jpg" alt="" class="img-fluid ms-2 justify-content-center" style="max-width: 80%;">
+        <button id="toggleImageBtn" class="button btn btn-primary">Tampilkan Gambar</button>
+        <img id="toggleImage" src="Image/1.0.jpg" alt="" class="img-fluid ms-2 justify-content-center"
+          style="max-width: 80%; height: 80vh; display: none;">
       </div>
+      <button class="button bg-dark mt-3">
+        <a href="https://www.google.com/search?q=revolusi+industri+1.0&oq=revo&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDsyBggCEEUYOTIGCAMQRRg7MgcIBBAAGI8CMgcIBRAAGI8CMgYIBhBFGD0yBggHEEUYPNIBCDE0NzVqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8  ">Sumber</a>
+      </button>
     </div>
-
-    <!-- Bagian gambar -->
-
   </section>
 
   <section id="2.0" class="m-5 p-4">
@@ -96,9 +95,7 @@
         Revolusi ini melanjutkan proses yang dimulai pada Revolusi Industri 1.0, namun dengan fokus pada teknologi baru
         dan peningkatan dalam produksi massal, serta perkembangan besar dalam bidang energi dan transportasi.</p>
 
-      <button id="toggleTextBtn" class="btn btn-primary">Klik</button>
-
-      <div id="moreText" style="display: none;">
+      <div>
         <p><strong>Ciri-ciri utama Revolusi Industri 2.0:</strong></p>
         <ul>
           <li><strong>Elektrifikasi:</strong> Pengenalan listrik sebagai sumber energi utama memungkinkan efisiensi yang
@@ -130,109 +127,118 @@
           <li><strong>Perkembangan Ilmu Pengetahuan:</strong> Revolusi Industri juga mendorong kemajuan dalam ilmu
             pengetahuan dan teknologi.</li>
         </ul>
-        <img src="Image/1.0.jpg" alt="">
+        <img class="w-25" src="Image/2.0.jpeg" alt="">
       </div>
+      <button class="button bg-dark mt-3">
+        <a href="https://www.google.com/search?q=revolusi+industri+2.0&sca_esv=53b09118edbda9fc&sxsrf=AHTn8zqEqQuAK1M4oxoaUSnYLNcX9rqB_g%3A1740629304498&ei=OOW_Z_CTHpqZ4-EPoefnkAo&oq=revolusi+industri+2&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3Jldm9sdXNpIGluZHVzdHJpIDIqAggAMg0QABiABBiwAxhDGIoFMg0QABiABBiwAxhDGIoFMg0QABiABBiwAxhDGIoFMg0QABiABBiwAxhDGIoFMg0QABiABBiwAxhDGIoFMg0QABiABBiwAxhDGIoFMg0QABiABBiwAxhDGIoFMg0QABiABBiwAxhDGIoFMg0QABiABBiwAxhDGIoFMg0QABiABBiwAxhDGIoFSIMTUBlY0AlwAXgAkAEAmAEAoAEAqgEAuAEByAEA-AEBmAIBoAIJmAMAiAYBkAYKkgcBMaAHAA&sclient=gws-wiz-serp">Sumber</a>
+      </button>
     </div>
   </section>
 
-
   <section id="3.0" class="m-5 p-4">
     <div class="bg-white m-5 p-3 flex-fill">
-      <div >
+      <div>
         <h1>Revolusi Industri 3.0</h1>
         <p>Revolusi Industri 3.0, yang dikenal juga sebagai Revolusi Industri Digital, terjadi pada akhir abad ke-20,
           sekitar tahun 1970-an hingga 1990-an. Ini ditandai dengan kemajuan teknologi informasi, komputer, dan otomasi
           yang mengubah cara produksi, distribusi, dan komunikasi.</p>
-    
 
-      <button id="changeTextBtn" class="btn btn-primary">Klik untuk lebih banyak</button>
+        <div>
+          <p><strong>Penggunaan Komputer dan Otomasi:</strong> Perusahaan mulai menggunakan komputer untuk meningkatkan
+            efisiensi operasional,
+            mengontrol proses produksi, dan meningkatkan kualitas produk. Sistem otomasi juga diperkenalkan untuk
+            menggantikan
+            pekerjaan manual, meningkatkan produktivitas.</p>
 
-      <div id="additionalText" style="display: none;">
-        <p><strong>Penggunaan Komputer dan Otomasi:</strong> Perusahaan mulai menggunakan komputer untuk meningkatkan
-          efisiensi operasional,
-          mengontrol proses produksi, dan meningkatkan kualitas produk. Sistem otomasi juga diperkenalkan untuk
-          menggantikan
-          pekerjaan manual, meningkatkan produktivitas.</p>
+          <p><strong>Teknologi Informasi dan Internet:</strong> Dengan perkembangan komputer dan internet, informasi
+            dapat
+            diproses dan
+            dibagikan dengan lebih cepat. Ini mempengaruhi bisnis, memungkinkan perusahaan untuk bekerja lebih efisien
+            dan
+            membuka peluang baru dalam komunikasi dan pemasaran.</p>
 
-        <p><strong>Teknologi Informasi dan Internet:</strong> Dengan perkembangan komputer dan internet, informasi dapat
-          diproses dan
-          dibagikan dengan lebih cepat. Ini mempengaruhi bisnis, memungkinkan perusahaan untuk bekerja lebih efisien dan
-          membuka peluang baru dalam komunikasi dan pemasaran.</p>
+          <p><strong>Robotika:</strong> Dalam banyak industri, robot digunakan untuk menggantikan tenaga manusia dalam
+            pekerjaan berulang dan
+            berisiko tinggi. Robot ini dapat bekerja dengan presisi tinggi dan kecepatan yang lebih cepat dibandingkan
+            manusia.</p>
 
-        <p><strong>Robotika:</strong> Dalam banyak industri, robot digunakan untuk menggantikan tenaga manusia dalam
-          pekerjaan berulang dan
-          berisiko tinggi. Robot ini dapat bekerja dengan presisi tinggi dan kecepatan yang lebih cepat dibandingkan
-          manusia.</p>
+          <p><strong>Globalisasi:</strong> Perusahaan bisa memperluas pasar mereka secara global berkat teknologi
+            komunikasi
+            dan transportasi
+            yang lebih canggih.</p>
 
-        <p><strong>Globalisasi:</strong> Perusahaan bisa memperluas pasar mereka secara global berkat teknologi
-          komunikasi
-          dan transportasi
-          yang lebih canggih.</p>
+          <p><strong>Perubahan dalam Sumber Daya Manusia:</strong> Tuntutan akan keterampilan teknis dan kemampuan untuk
+            mengoperasikan
+            teknologi baru semakin meningkat. Banyak pekerjaan yang dulu dilakukan secara manual mulai digantikan oleh
+            teknologi.</p>
 
-        <p><strong>Perubahan dalam Sumber Daya Manusia:</strong> Tuntutan akan keterampilan teknis dan kemampuan untuk
-          mengoperasikan
-          teknologi baru semakin meningkat. Banyak pekerjaan yang dulu dilakukan secara manual mulai digantikan oleh
-          teknologi.</p>
+          <img src="Image/3.0.jpg" alt="">
+        </div>
       </div>
-
+      <button class="button bg-dark mt-3">
+        <a href="https://www.google.com/search?q=revolusi+industri+3.0&oq=revolusi+industri+3.&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDnSAQg0MDkxajBqOagCALACAA&sourceid=chrome&ie=UTF-8">Sumber</a>
+      </button>
+    </div>
   </section>
 
+  <section id="4.0" class="m-5 p-4">
+    <div class="bg-white m-5 p-3 flex-fill fs-4">
+      <h1>Revolusi Industri 4.0</h1>
+      <p>Revolusi Industri 4.0 adalah sebuah perubahan besar dalam cara kita memproduksi, mengelola, dan berinteraksi
+        dengan teknologi, yang ditandai dengan integrasi sistem digital, fisik, dan biologis. Revolusi ini membawa
+        perubahan signifikan dalam berbagai sektor, termasuk manufaktur, pertanian, kesehatan, dan lainnya.</p>
+      <ol>
+        <li>Internet of Things (IoT): Menghubungkan berbagai perangkat melalui internet sehingga bisa saling
+          berkomunikasi dan berbagi data. Contohnya adalah mesin yang dapat memantau dirinya sendiri dan memberikan
+          informasi kepada operator tentang kondisi operasionalnya.</li>
 
-  <section></section>
+        <li>Kecerdasan Buatan (AI) dan Pembelajaran Mesin: Teknologi ini memungkinkan mesin untuk belajar dari data dan
+          meningkatkan kinerjanya tanpa intervensi manusia. Dalam industri, ini dapat digunakan untuk optimasi proses,
+          prediksi pemeliharaan, dan peningkatan efisiensi.</li>
 
+        <li>Big Data dan Analitik: Pengumpulan dan analisis data dalam jumlah besar memungkinkan perusahaan untuk
+          membuat keputusan yang lebih cerdas, serta memahami tren pasar atau proses produksi secara lebih mendalam.
+        </li>
+
+        <li>Automasi dan Robotika: Penggunaan robot dan sistem otomatis lainnya yang dapat mengerjakan tugas-tugas yang
+          sebelumnya dilakukan oleh manusia, meningkatkan kecepatan dan akurasi produksi.</li>
+
+        <li>Teknologi Cloud: Menyediakan infrastruktur untuk menyimpan, mengelola, dan mengakses data secara jarak jauh,
+          memungkinkan kolaborasi lebih baik antara berbagai pihak dan mempermudah pengelolaan informasi.</li>
+
+        <li>Augmented Reality (AR) dan Virtual Reality (VR): Digunakan untuk melatih pekerja, merancang produk, atau
+          bahkan mengontrol mesin dari jarak jauh.</li>
+
+        <li>Teknologi 3D Printing (Pencetakan 3D): Mampu menghasilkan produk dengan desain yang kompleks dan lebih cepat
+          dengan biaya yang lebih rendah. Teknologi ini banyak digunakan dalam pembuatan prototipe, bahkan dalam
+          pembuatan produk akhir.</li>
+      </ol>
+      <img src="Image/4.0.jpg" alt="">
+      <button class="button bg-dark mt-3">
+        <a href="https://www.google.com/search?q=revolusi+industri+4.0&oq=revolusi+industri+4&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDkyBggCEEUYPTIGCAMQRRg8MgYIBBBFGDzSAQg2MzcxajBqOagCALACAQ&sourceid=chrome&ie=UTF-8">Sumber</a>
+      </button>
+    </div>
+  </section>
 
   <script>
-
-
-    document.getElementById('changeTextBtn').addEventListener('click', function () {
-      var additionalText = document.getElementById('additionalText');
-      // Toggle tampilan teks
-      if (additionalText.style.display === "none") {
-        additionalText.style.display = "block";
-        this.textContent = "Klik "; // Ubah teks tombol
+    document.getElementById('toggleImageBtn').addEventListener('click', function () {
+      var toggleImage = document.getElementById('toggleImage');
+      if (toggleImage.style.display === "none") {
+        toggleImage.style.display = "block";
+        this.textContent = "Sembunyikan Gambar"; // Ubah teks tombol
       } else {
-        additionalText.style.display = "none";
-        this.textContent = "Klik untuk lebih banyak"; // Kembalikan teks tombol
+        toggleImage.style.display = "none";
+        this.textContent = "Tampilkan Gambar"; // Kembalikan teks tombol
       }
     });
-
-    document.getElementById('toggleTextBtn').addEventListener('click', function () {
-      var moreText = document.getElementById('moreText');
-      if (moreText.style.display === "none") {
-        moreText.style.display = "block";
-        this.textContent = "Klik"; // Ubah teks tombol
-      } else {
-        moreText.style.display = "none";
-        this.textContent = "Klik untuk lebih banyak"; // Kembalikan teks tombol
-      }
-    });
-
-    document.getElementById('toggleTextBtn').addEventListener('click', function () {
-      var moreText = document.getElementById('moreText');
-      if (moreText.style.display === "none") {
-        moreText.style.display = "block";
-        this.textContent = "Klik"; // Ubah teks tombol
-      } else {
-        moreText.style.display = "none";
-        this.textContent = "Klik untuk lebih banyak"; // Kembalikan teks tombol
-      }
-    });
-
-
-    document.getElementById('changeTextBtn').addEventListener('click', function () {
-      var additionalText = document.getElementById('additionalText');
-      // Toggle tampilan teks
-      if (additionalText.style.display === "none") {
-        additionalText.style.display = "block";
-        this.textContent = "Klik untuk lebih sedikit"; // Ubah teks tombol
-      } else {
-        additionalText.style.display = "none";
-        this.textContent = "Klik untuk lebih banyak"; // Kembalikan teks tombol
-      }
-    });
-
-
   </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

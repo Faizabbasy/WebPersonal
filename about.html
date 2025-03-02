@@ -12,90 +12,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="about.css">
     <style>
-        .animate__animated.animate__fadeInLeft {
-            --animate-duration: 2s;
-        }
 
-        .animate__animated.animate__fadeInRight {
-            --animate-duration: 2s;
-        }
-
-        .animate__animated.animate__fadeInDown {
-            --animate-duration: 2s;
-        }
-
-        .animate__animated.animate__fadeInUp {
-            --animate-duration: 2s;
-        }
-
-        /* This changes all the animations globally */
-        :root {
-            --animate-duration: 800ms;
-            --animate-delay: 0.9s;
-        }
-
-        /* From Uiverse.io by Fcodingx */
-        .card {
-            width: 20%;
-            height: 120px;
-            padding: 0.5rem;
-            background: rgba(198, 198, 198, 0.34);
-            border-radius: 8px;
-            backdrop-filter: blur(5px);
-            border-bottom: 3px solid rgba(255, 255, 255, 0.440);
-            border-left: 2px rgba(255, 255, 255, 0.545) outset;
-            box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.280);
-            transform: skewX(10deg);
-            transition: .4s;
-            overflow: hidden;
-            color: white;
-        }
-
-        .card:hover {
-            height: 50vh;
-            width: 40%;
-            transform: skew(0deg);
-        }
-
-        .align {
-            padding: 1rem;
-            display: flex;
-            flex-direction: row;
-            gap: 5px;
-            align-self: flex-start;
-        }
-
-        .red {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background-color: #ff605c;
-            box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
-        }
-
-        .yellow {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background-color: #ffbd44;
-            box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
-        }
-
-        .green {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background-color: #00ca4e;
-            box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
-        }
-
-        .card h1 {
-            text-align: center;
-            margin: 1.3rem;
-            color: rgb(218, 244, 237);
-            text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.573);
-        }
     </style>
 </head>
 
@@ -118,7 +37,7 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About</a>
@@ -147,55 +66,174 @@
         </div>
     </nav>
 
-    <div class="container mt-5 pt-5 justify-content-center">
-        <div class="row align-items-center gap-5">
-            <div class="col-md-6 text-center position-relative">
-                <img class="img-fluid animate__animated animate__fadeInRight w-50"
-                    src="Image/Screenshot_2025-02-20_143653-removebg-preview.png" alt=""
-                    style="border-radius: 0px 170px; z-index: 1;">
-            </div>
-         
-            <div class="card col-md-6 animate__animated animate__fadeInLeft" style="color: wheat;">
-                <div class="align">
-                    <span class="red"></span>
-                    <span class="yellow"></span>
-                    <span class="green"></span>
+    <section>
+        <div class=" d-flex mt-5  justify-content-center">
+            <div class="row justify-content-center align-items-center my-5">
+                <div class="cardd col-md-6 animate__animated animate__fadeInLeft" style="color: wheat;">
+                    <div class="alignn">
+                        <span class="red"></span>
+                        <span class="yellow"></span>
+                        <span class="green"></span>
+                    </div>
+                    <div class="d-flex gap-5 mx-3">
+                        <img class="w-25" src="Image/meRmv.png" alt="" style="border-radius: 50%;">
+                        <div>
+                            <h1 class="animate__animated animate__fadeInDown">About
+                                <hr>
+                            </h1>
+                            <p class="animate__animated animate__fadeInRight">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero hic dolorum dolores
+                                optio
+                                sit
+                                officia <br>similique veniam fugiat, corporis dolorem laudantium neque assumenda
+                                consectetur
+                                magni ullam unde enim ad omnis.
+                            </p>
+                        </div>
+                    </div>
                 </div>
+            </div>
 
-                <h1>About </h1>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde explicabo enim rem odio
-                    assumenda?
-                </p>
+        </div>
+
+        <div class="d-flex m-5">
+            <div class="row justify-content-center align-items-center mt-0">
+                <div class="card col-md-6 animate__animated animate__fadeInRight" style="color: wheat;">
+                    <div class="align">
+                        <span class="red"></span>
+                        <span class="yellow"></span>
+                        <span class="green"></span>
+                    </div>
+
+                    <h1>Hobby!!</h1>
+                    <div class="d-flex gap-5 mx-3">
+                        <p>
+                            Hobby saya berolahraga, sejak SMP saya sudah mulai berolahraga,<br> saya suka
+                            berolahraga
+                            karena saya merasa lebih sehat dan lebih segar setelah berolahraga. <br> dan saya juga
+                            suka
+                            menonton
+                            film, saya suka menonton film karena saya merasa lebih
+                            santai<br> setelah menonton film Genre film saya yaitu Horror, Action, dan lain lain.
+                        </p>
+                        <div class="col-md-6 text-center order-md-2">
+                            <img class="img-fluid animate__animated animate__fadeInRight w-70" src="Image/meRmv.png"
+                                alt="" style="border-radius: 55px 130px; ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center mt-0">
+                <div class="card1 w-100 col-md-6 animate__animated animate__fadeInRight" style="color: wheat; ">
+                    <div class="align1">
+                        <span class="red"></span>
+                        <span class="yellow"></span>
+                        <span class="green"></span>
+                    </div>
+
+                    <h1>Pendidikan</h1>
+                    <div class="d-flex gap-5 mx-3">
+                        <h4></h4>
+                        <h4></h4>
+                        <h4></h4>
+                        <h4></h4>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="row justify-content-center mt-5 pt-5 gap-5">
-            <div class="col-md-6 text-center order-md-2">
-                <img class="img-fluid animate__animated animate__fadeInRight w-50" src="Image/meRmv.png" alt=""
-                    style="border-radius: 55px 130px; ">
-            </div>
-            <div class="card col-md-6 animate__animated animate__fadeInLeft" style="color: wheat;">
-                <div class="align">
-                    <span class="red"></span>
-                    <span class="yellow"></span>
-                    <span class="green"></span>
+
+        <div class="container col-md-6 mt-5 animate__animated animate__fadeInLeft">
+            <h3 style="color: white;">
+                <hr> __Skil
+            </h3>
+            <button class="button align-items-center" onclick="showCards()">Tech Stack</button>
+
+            <div class="col-md-6 d-flex gap-3 mt-3 ">
+                <div class="card12 col-md-6" style="border-bottom: 3px solid rgba(255, 255, 255, 0.440);
+                    border-left: 2px rgba(255, 255, 255, 0.545) outset;
+                    border-right: 2px rgba(255, 255, 255, 0.545) outset;
+                    border-top: 2px rgba(255, 255, 255, 0.545) outset;">
+                    <div class="card2 d-flex justify-content-center gap-2">
+                        <img class="mt-2" src="Image/html-removebg-preview.png" alt=""
+                            style="width: 30% ; height: 50px;">
+                        <h5 class="mt-3" style="color: white;">HTMl</h5>
+                    </div>
                 </div>
 
-                <h1>Hobby!!</h1>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde explicabo enim rem odio
-                    assumenda?
-                </p>
-            </div>
-        </div>
-    </div>
+                <div class="card12 col-md-6" style="border-bottom: 3px solid rgba(255, 255, 255, 0.440);
+                border-left: 2px rgba(255, 255, 255, 0.545) outset;
+                border-right: 2px rgba(255, 255, 255, 0.545) outset;
+                border-top: 2px rgba(255, 255, 255, 0.545) outset;">
+                    <div class="card2 d-flex justify-content-center gap-2">
+                        <img class="mt-2" src="Image/css-removebg-preview.png" alt=""
+                            style="width: 30% ; height: 50px;">
+                        <h5 class="mt-3" style="color: white;">CSS</h5>
+                    </div>
+                </div>
 
+                <div class="card12 col-md-6" style="border-bottom: 3px solid rgba(255, 255, 255, 0.440);
+                border-left: 2px rgba(255, 255, 255, 0.545) outset;
+                border-right: 2px rgba(255, 255, 255, 0.545) outset;
+                border-top: 2px rgba(255, 255, 255, 0.545) outset;">
+                    <div class="card2 d-flex justify-content-center gap-2">
+                        <img class="mt-2" src="Image/js.jpg" alt=""
+                            style="width: 30% ; height: 50px; border-radius: 50%;">
+                        <h5 class="mt-3" style="color: white;">JavaScript</h5>
+                    </div>
+                </div>
+
+                <div class="card12 col-md-6" style="border-bottom: 3px solid rgba(255, 255, 255, 0.440);
+                border-left: 2px rgba(255, 255, 255, 0.545) outset;
+                border-right: 2px rgba(255, 255, 255, 0.545) outset;
+                border-top: 2px rgba(255, 255, 255, 0.545) outset;">
+                    <div class="card2 d-flex justify-content-center gap-2">
+                        <img class="mt-2" src="Image/php-removebg-preview.png" alt=""
+                            style="width: 30% ; height: 50px;">
+                        <h5 class="mt-3" style="color: white;">PHP</h5>
+                    </div>
+                </div>
+
+                <div class="card12 col-md-6" style="border-bottom: 3px solid rgba(255, 255, 255, 0.440);
+                border-left: 2px rgba(255, 255, 255, 0.545) outset;
+                border-right: 2px rgba(255, 255, 255, 0.545) outset;
+                border-top: 2px rgba(255, 255, 255, 0.545) outset;">
+                    <div class="card2 d-flex justify-content-center gap-2">
+                        <img class="mt-2" src="Image/boostrap.jpg" alt=""
+                            style="width: 30% ; height: 50px; border-radius: 50%;">
+                        <h5 class="mt-3" style="color: white;">Bootdtrap</h5>
+                    </div>
+                </div>
+            </div>
+
+    </section>
 
     <script>
-        document.documentElement.style.setProperty('--animate-duration', '2s');
+        document.documentElement.style.setProperty('--animate-duration', '1s');
         // All animations will take half the time to accomplish
-        document.documentElement.style.setProperty('--animate-duration', '.5s');
+        document.documentElement.style.setProperty('--animate-duration', '.1s');
+
+        function showH3() {
+            const cardInfo = document.querySelector('.card-info');
+            cardInfo.classList.toggle('show'); // Add/remove 'show' class to toggle visibility
+
+        }
+
+        function showCards() {
+            // Get all elements with the class .card12
+            const cards = document.querySelectorAll('.card12');
+
+            // Loop through each card and change the display to 'block'
+            cards.forEach(card => {
+                // Toggle visibility by changing display between 'none' and 'block'
+                if (card.style.display === 'none' || card.style.display === '') {
+                    card.style.display = 'block';  // Show the card
+                } else {
+                    card.style.display = 'none';  // Hide the card again
+                }
+            });
+        }
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
